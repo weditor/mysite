@@ -152,7 +152,7 @@ baidu_push: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
+  tags: /tags/ || tags
   #categories: /categories/ || th
   archives: /archives/ || archive
   #schedule: /schedule/ || calendar
@@ -234,7 +234,7 @@ toc:
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
   # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` in Front-matter.
   max_depth: 6
 
@@ -430,11 +430,11 @@ codeblock:
   highlight_theme: night eighties
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
-    style:
+    style: mac
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
