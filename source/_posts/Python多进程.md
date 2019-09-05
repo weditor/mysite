@@ -84,6 +84,11 @@ print(queue.get())
 
 输出: `6`
 
+另外还有
+
+* SimpleQueue: 简化版本的 Queue， 只有 get/put/empty
+* JoinableQueue: 复杂版的Queue，支持更细粒度的任务控制。每次处理一个数据，需要显示调用 `task_done` 。 
+
 ### Pipe
 
 Pipe 是管道，默认是双向管道。每次构建一个Pipe会得到两个对象, 即Pipe的两个输入输出端。
@@ -153,5 +158,10 @@ print(pool.map(double_number, range(5)))
 其中提供了对于线程和进程两种并发方式的统一接口封装：`ProcessPoolExecutor`/`ThreadPoolExecutor` 。
 接口更加简单和易用, 主要使用了 `Future` 的实现方式， 额外提供了timeout控制，不过Future会耗费一些性能。
 
+## 数据共享
 
+Todo.
+* Context.
+* Manager
+* Value
 
